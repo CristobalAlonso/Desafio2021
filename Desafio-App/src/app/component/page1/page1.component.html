@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang=”en”>
+<head>
+    <meta charset=”UTF-8″ />
+    <title>Pagina 1</title>
+</head>
+<body>
+  <form>
+    <div class="BOX">
+      <div id="center" class="mb-3">
+       <input  name="titulo" placeholder="titulo" (keyup)="getTittlekeyup($event.target.value)">
+       <input type="file" accept="image/png, .jpeg, .jpg, image/gif">
+    </div>
+    <div id="center" class="mb-3">
+      <Textarea placeholder="Descripcion" (keyup)="getTextkeyup($event.target.value)"></Textarea>
+    </div>
+    <div id="center">
+      <button style="background-color: white; color: black; margin-right: 20%;;" type="button"  (click)="buttonEvent()" class="btn btn-primary">guardar</button>
+      <button style="background-color: white; color:black" type="button" class="btn btn-primary" c><a href="/page2" target="_self">Pagina Siguiente</a></button>
+    </div>
+  </div>
+  </form>
+    
+</body>
+</html>
